@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+}
+
+/* TEKST OPMAAK */
+
+.website-titel {
+    color: rgb(194, 166, 11);
+}
+
+h1 {
+    font-family: "Sofia", sans-serif;
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    font-family: "Dosis", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.container-favorites {
+    text-align: center;
+}
+
+.broodje, .broodje-prijs {
+    padding: 15px;
+}
+
+.broodje-toelichting {
+    font-size: 14px;
+}
+
+.welkom-tekst, .contact-blok1 {
+    padding: 25px 75px;
+}
+
+.contact-h2 {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+/* SOCIAL MEDIA KNOPPEN */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin: 10px;
+}
+
+.fa-instagram {
+    background: rgb(209, 41, 69);
+    color: white;
+    margin: 10px;
+}
+
+
+/* NAVIGATIE */
+
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-menu li {
+    display: inline;
+    margin: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-link:hover {
+    text-transform: uppercase;
+}
+
+.nav-link:visited {
+    color:rgb(6, 56, 6); 
+}
+
+
+/* LAYOUT */
+.container-balk {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.balk {
+    background-color: rgb(194, 166, 11);
+    height: 50px;
+    width: 250px; 
+    border-radius: 20px;
+}
+
+.balk-tekst {
+    text-align: center;
+    color: #fff;
+    padding: 6px;
+}
+
+.footer {
+    background: lightgray;
+    padding: 20px 0;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+.container-broodjemaand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.broodjesvdmaand {
+    padding: 10px 50px;
+}
+
+.contact-form {
+    margin-top: 50px;
+}
+
+.form-input {
+    margin: 0 20px;
+}
+.submit {
+    width: auto;
+    height: 50px;
+    border: solid rgb(6, 56, 6) 2px;
+    border-radius: 15px;
+    background-color: rgb(6, 56, 6);
+    color: #fff;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.submit:hover {
+    opacity: 0.7;
+}
+
+
+/* AFBEELDINGEN */
+
+.foto-top {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.foto-contact {
+    border-radius: 50%;
+    width: 400px;
+}
+
+.broodje-foto {
+    width: 150px;
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.broodjesvdmaand {
+    position: relative;
+    width: 80%;
+  }
+
+.broodjesvdmaand:hover .broodje-foto {
+    opacity: 0.5;
+}
+  
+.broodjesvdmaand:hover .tekst-midden {
+    opacity: 1;
+}
+
+.broodje-foto {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.tekst-midden {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+  
+.broodje-tekst {
+    background-color:darkgreen;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1024px) {
+
+    .foto-top {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .container-favorites {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr;
+        grid-gap: 20px;
+        margin: 20px 200px 0 200px;
+    }
+
+    .broodje-toelichting {
+        padding-top: 10px;
+    }
+
+    .container-broodjemaand,
+    .welkom-blok,
+    .contact-blok1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+        padding: 20px 100px;
+        /*margin: 20px 200px 0 200px; */
+    }
+
+    .contact-blok1 {
+        margin: 10px 150px;
+    }
+
+    
+}
